@@ -2,7 +2,7 @@ files = dir("./kernels/")
 
 readKernel = function(kname)
 {
-    paste(readLines(paste("./kernels/", kname, sep = "")), sep = "\n")
+    paste(readLines(paste("./kernels/", kname, sep = "")), collapse = "\n")
 }
 
 out = lapply(files, readKernel)
